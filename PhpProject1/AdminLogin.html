@@ -1,0 +1,40 @@
+<?php
+session_start();
+//$_SESSION['seat_no']=$_POST['seatno'];
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+body {
+    background-image:url("Images/b.jpg") ;
+}
+</style>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=7.0">
+        <link rel="stylesheet" type="text/css" href="design.css">
+
+    </head>
+    <body>
+<center><img src="Images/adminlock.png" style="width:200px;height:200px"></center>
+        <fieldset>
+            <center><legend><h1> LOGIN </center></h1></legend>
+          <center><div id="login">Enter Admin Details<br><br><br>
+                
+            <form method="post" action="http://localhost/PhpProject1/adminconn.php"> 
+            <label for="username">Admin name:</label>
+            <input type="text" id="username" name="adminname">
+            <br><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <br><br><br>
+            <div id="lower">
+            <input type="submit" value="Login">
+            </div><!--/ lower-->
+        </form>
+        </div>
+        </fieldset>
+    </body>
+</html>
